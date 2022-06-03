@@ -1,0 +1,77 @@
+.clinic-details {
+  background-color: beige;
+}
+
+.data-table {
+  height: 80vh;
+  width: 100%;
+}
+
+.login-form {
+  margin: 50px 400px 0px 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+@media screen and (max-width:820px) {
+  .login-form {
+    margin: auto;
+    padding: 40px;
+  }
+}
+
+.register-form {
+  margin: 50px 200px 0px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+@media screen and (max-width:820px) {
+  .register-form {
+    margin: auto;
+    padding: 40px;
+  }
+}
+
+.details {
+  margin: 50px 200px 0px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+@media screen and (max-width:820px) {
+  .details {
+    margin: auto;
+    padding: 40px;
+  }
+}
+
+.review-details {
+  margin: 50px 200px 0px 200px;
+  padding: 40px;
+}
+
+@media screen and (max-width:820px) {
+  .review-details {
+    margin: auto;
+    padding: 40px;
+  }
+}
+
+.questions-card {
+  margin: 50px 200px 0px 200px;
+  padding: 0px 40px 40px 40px;
+}
+
+@media screen and (max-width:820px) {
+  .questions-card {
+    margin: auto;
+    padding: 0px;
+  }
+}

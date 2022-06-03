@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "healthId": 1,
+        "name": "Test Patient 1",
+        "lastTestedOn": "01-05-2022"
+    },
+    {
+        "id": 2,
+        "healthId": 2,
+        "name": "Test Patient 2",
+        "lastTestedOn": ""
+    }
+]
