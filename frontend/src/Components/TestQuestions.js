@@ -37,16 +37,16 @@ const TestQuestions = () => {
             <CardContent>
                 <Typography variant='h5'>Questions</Typography>
                 {questionList.map(questionObj => {
-                    return <div className='border px-4 py-2'>
-                        <FormControl>
+                    return <div className='border px-4 py-2' key={`div_${questionObj.id}`}>
+                        <FormControl key={questionObj.id}>
                             <FormLabel id={questionObj.id}>
                                 {questionObj.question}
                             </FormLabel>
                             <RadioGroup value={answers[questionObj.id]} row
                                 onChange={(e) => handleChange(e, questionObj.id)}
                             >
-                                {questionObj.questionOptions.map(option => {
-                                    return <FormControlLabel value={option.value} control={<Radio />} label={option.label} />
+                                {questionObj.questionOptions.map((option, index) => {
+                                    return <FormControlLabel value={option.value} key={`${questionObj.id}_${index}`} control={<Radio />} label={option.label} />
                                 })}
 
                             </RadioGroup>
@@ -58,11 +58,11 @@ const TestQuestions = () => {
                 <Button variant='contained' onClick={submitResponses}>Submit responses</Button>
             </CardActions>
         </Card>}
-        <Dialog open={showResponse} className='dialog'>
+        <Dialog open={showResponse}>
             <DialogTitle>
                 Test result
             </DialogTitle>
-            <DialogContentText>
+            <DialogContentText className='p-4'>
                 {responseObj.needsConsultation ?
                     <div>
                         <Typography>

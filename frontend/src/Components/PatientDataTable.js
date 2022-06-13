@@ -30,8 +30,8 @@ const PatientDataTable = () => {
     }
     const columns = [
         { field: 'healthId', headerName: 'Health Id' },
-        { field: 'name', headerName: 'Name' },
-        { field: 'lastTestedOn', headerName: 'Last tested on' },
+        { field: 'name', headerName: 'Name', width: 150 },
+        { field: 'lastTestedOn', headerName: 'Last tested on', width: 140 },
         {
             field: 'action', headerName: '',
             width: 'auto',

@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Common/Header';
 import Login from './Components/Login';
@@ -10,18 +11,24 @@ import PatientRegistration from './Components/PatientRegistration';
 import TakeTest from './Components/TakeTest';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className='App'>
       <BrowserRouter>
-        <Header />
+        <Header authenticate={() => setIsLoggedIn(false)} isLoggedIn={isLoggedIn} />
         <Routes>
-          <Route path='/' element={<Login />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/patientProfile/:healthId' element={<PatientProfile />} />
-          <Route path='/registerPatient' element={<PatientRegistration />} />
-          <Route path='/takeTest/:healthId' element={<TakeTest />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/' element={<InvalidPage />} />
+          {isLoggedIn ? <>
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/patientProfile/:healthId' element={<PatientProfile />} />
+            <Route path='/registerPatient' element={<PatientRegistration />} />
+            <Route path='/takeTest/:healthId' element={<TakeTest />} />
+          </> :
+            <>
+              <Route path='/' element={<Login authenticate={() => setIsLoggedIn(true)} />} />
+              <Route path='/login' element={<Login authenticate={() => setIsLoggedIn(true)} />} />
+            </>
+          }
+          <Route path='*' element={<InvalidPage />} />
         </Routes>
       </BrowserRouter>
     </div>
