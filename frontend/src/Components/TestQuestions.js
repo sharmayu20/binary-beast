@@ -25,7 +25,7 @@ const TestQuestions = () => {
         //to be repaced by API calls
         let response = 'test';
         if (response === 'test') {
-            setResponseObj({ needsConsultation: true, consultationType: 'Test consultation type' });
+            setResponseObj({ needsConsultation: true, consultationType: 'Psychiatrist' });
         }
         else {
             setResponseObj({ needsConsultation: false });
