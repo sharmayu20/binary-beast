@@ -2,13 +2,13 @@
     {
         "id": 1,
         "healthId": 1,
-        "name": "Test Patient 1",
+        "name": "Anjali Srivastava",
         "lastTestedOn": "01-05-2022"
     },
     {
         "id": 2,
         "healthId": 2,
-        "name": "Test Patient 2",
-        "lastTestedOn": ""
+        "name": "Bhargavi Sai",
+        "lastTestedOn": "05-06-2022"
     }
 ]

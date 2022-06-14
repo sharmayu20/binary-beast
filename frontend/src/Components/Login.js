@@ -12,6 +12,7 @@ const Login = (props) => {
         clinicName: '',
         username: '',
         address: '',
+        description: '',
         password: '',
         reEnterPassword: ''
     });
@@ -27,6 +28,7 @@ const Login = (props) => {
             clinicName: '',
             username: '',
             address: '',
+            description: '',
             password: '',
             reEnterPassword: ''
         });
@@ -49,6 +51,7 @@ const Login = (props) => {
             clinicName: '',
             username: '',
             address: '',
+            description: '',
             password: '',
             reEnterPassword: ''
         });

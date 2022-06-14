@@ -1,8 +1,12 @@
 [
     {
         "id": 1,
-        "question": "This is test question 1?",
+        "question": "Patient tended to over-react to situations.",
         "questionOptions": [
+            {
+                "value": 0,
+                "label": 0
+            },
             {
                 "value": 1,
                 "label": 1
@@ -14,17 +18,17 @@
             {
                 "value": 3,
                 "label": 3
-            },
-            {
-                "value": 4,
-                "label": 4
             }
         ]
     },
     {
         "id": 2,
-        "question": "This is test question 2?",
+        "question": "Patient found it difficult to relax.",
         "questionOptions": [
+            {
+                "value": 0,
+                "label": 0
+            },
             {
                 "value": 1,
                 "label": 1
@@ -36,17 +40,17 @@
             {
                 "value": 3,
                 "label": 3
-            },
-            {
-                "value": 4,
-                "label": 4
             }
         ]
     },
     {
         "id": 3,
-        "question": "This is test question 3?",
+        "question": "Patient found himself/herself in situations that made him/her so anxious he/she was most relieved when they ended.",
         "questionOptions": [
+            {
+                "value": 0,
+                "label": 0
+            },
             {
                 "value": 1,
                 "label": 1
@@ -58,17 +62,17 @@
             {
                 "value": 3,
                 "label": 3
-            },
-            {
-                "value": 4,
-                "label": 4
             }
         ]
     },
     {
         "id": 4,
-        "question": "This is test question 4?",
+        "question": "Patient felt that he/she had nothing to look forward to.",
         "questionOptions": [
+            {
+                "value": 0,
+                "label": 0
+            },
             {
                 "value": 1,
                 "label": 1
@@ -80,17 +84,17 @@
             {
                 "value": 3,
                 "label": 3
-            },
-            {
-                "value": 4,
-                "label": 4
             }
         ]
     },
     {
         "id": 5,
-        "question": "This is test question 5?",
+        "question": "Patient found himself/herself getting upset rather easily.",
         "questionOptions": [
+            {
+                "value": 0,
+                "label": 0
+            },
             {
                 "value": 1,
                 "label": 1
@@ -102,10 +106,6 @@
             {
                 "value": 3,
                 "label": 3
-            },
-            {
-                "value": 4,
-                "label": 4
             }
         ]
     }

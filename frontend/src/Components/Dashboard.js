@@ -18,11 +18,11 @@ const Dashboard = () => {
                     <tbody>
                         <tr>
                             <td>Clinic name:</td>
-                            <td>Test clinic</td>
+                            <td>Binary beast clinic</td>
                         </tr>
                         <tr>
                             <td>Clinic Address:</td>
-                            <td>Test clinic address</td>
+                            <td>123 Test road, India</td>
                         </tr>
                         <tr>
                             <td>Total Test Conducted:</td>
@@ -31,7 +31,7 @@ const Dashboard = () => {
                     </tbody>
                 </table>
                 <Divider>Clinic Description</Divider>
-                Description of the clinic
+                The binary beast clinic provides assistance to the user to go through the mental health questionnaire in order to consult them through health professionals if required.
             </div>
             <div className='col-md-9'>
                 <div className='row'>
