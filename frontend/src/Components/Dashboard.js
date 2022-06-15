@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import PatientDataTable from './PatientDataTable';
-import { Button, FormControl, IconButton, Input } from '@mui/material';
+import { Button, Divider, FormControl, IconButton, Input } from '@mui/material';
 import SearchedOutlinedIcon from '@mui/icons-material/SearchOutlined';
 const Dashboard = () => {
     let navigate = useNavigate();
@@ -17,15 +17,21 @@ const Dashboard = () => {
                 <table>
                     <tbody>
                         <tr>
-                            <td>Clinic name</td>
-                            <td>Test clinic</td>
+                            <td>Clinic name:</td>
+                            <td>Binary beast clinic</td>
                         </tr>
                         <tr>
-                            <td>Total Test Conducted</td>
-                            <td>1</td>
+                            <td>Clinic Address:</td>
+                            <td>123 Test road, India</td>
+                        </tr>
+                        <tr>
+                            <td>Total Test Conducted:</td>
+                            <td>2</td>
                         </tr>
                     </tbody>
                 </table>
+                <Divider>Clinic Description</Divider>
+                The binary beast clinic provides assistance to the user to go through the mental health questionnaire in order to consult them through health professionals if required.
             </div>
             <div className='col-md-9'>
                 <div className='row'>
