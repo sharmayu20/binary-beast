@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Button, Card, CardActions, CardContent, Dialog, DialogContentText, DialogTitle, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const TestQuestions = () => {
+    let navigate = useNavigate();
     const [questionList, setQuestionList] = useState([]);
     const [answers, setAnswers] = useState({});
     const [showResponse, setShowResponse] = useState(false);
@@ -16,6 +18,9 @@ const TestQuestions = () => {
             })
     });
     const navigateToSlotBookingPage = () => {
+        
+        navigate('/dashboard2');
+
 
     }
     const handleChange = (e, id) => {
