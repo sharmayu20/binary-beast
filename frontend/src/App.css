@@ -75,3 +75,61 @@
     padding: 0px;
   }
 }
+
+.title-background {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 200px;
+  position: relative;
+  background-image: url(./assets/Images/background-image.png);
+}
+
+.bg {
+  position: absolute;
+  background-color: #25102b;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.align-center {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.title-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  color: #fff;
+  margin: 0;
+}
+
+.animate-text {
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+}
+.login-background {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  background-image: url(./assets/Images/background-image.png);
+}

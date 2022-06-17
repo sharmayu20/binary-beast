@@ -9,6 +9,7 @@ import Dashboard from './Components/Dashboard';
 import PatientProfile from './Components/PatientProfile';
 import PatientRegistration from './Components/PatientRegistration';
 import TakeTest from './Components/TakeTest';
+import Home from './Components/Home';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -24,10 +25,10 @@ function App() {
             <Route path='/takeTest/:healthId' element={<TakeTest />} />
           </> :
             <>
-              <Route path='/' element={<Login authenticate={() => setIsLoggedIn(true)} />} />
               <Route path='/login' element={<Login authenticate={() => setIsLoggedIn(true)} />} />
             </>
           }
+          <Route path='/' element={<Home isLoggedIn={isLoggedIn} />} />
           <Route path='*' element={<InvalidPage />} />
         </Routes>
       </BrowserRouter>
