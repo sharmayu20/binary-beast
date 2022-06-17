@@ -7,8 +7,8 @@ const Header = (props) => {
     const navigateToLoginPage = () => {
         navigate('/login');
     }
-    const navigateToDashboard = () => {
-        navigate('/dashboard');
+    const navigateToHome = () => {
+        navigate('/');
     }
     const logout = () => {
         props.authenticate();
@@ -16,7 +16,7 @@ const Header = (props) => {
     }
     return <AppBar position='static'>
         <Toolbar>
-            <Typography variant='h6' component='div' sx={{ flexGrow: 1 }} onClick={navigateToDashboard}>
+            <Typography variant='h6' component='div' sx={{ flexGrow: 1 }} onClick={navigateToHome}>
                 HEALTH APP
             </Typography>
             {props.isLoggedIn ?
